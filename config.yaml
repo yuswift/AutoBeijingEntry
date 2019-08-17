@@ -1,5 +1,8 @@
+# 上传进京证接口
 PostBeijingEntry:
+    #上传进京证请求的url
     url: https://enterbj.zhongchebaolian.com/enterbj-img/platform/enterbj/submitpaper_03
+    # http headers 最好都带上
     headers:
         Host: enterbj.zhongchebaolian.com
         Accept: application/json, text/javascript, */*; q=0.01
@@ -9,45 +12,81 @@ PostBeijingEntry:
         Origin: https://enterbj.zhongchebaolian.com
         User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
         Referer: https://enterbj.zhongchebaolian.com/enterbj-img/platform/enterbj/loadotherdrivers
+    # 最好都带上 可从Charles复制过来
     cookie:
         JSESSIONID:
-        CNZZDATA1260761932 :
+        CNZZDATA1260761932:
         UM_distinctid:
     data:
+        # app来源 应该是固定的 从Charles复制过来的
         - appsource: bjjj
+        # 这个参数应该影响不大 可以固定 可能是服务端作为统计使用
         - hiddentime: 2019-08-05+12%3A40%3A21
+        # 应该是固定的
         - inbjentrancecode1: 16
+        # 应该是固定的
         - inbjentrancecode: 13
+        # 比较关键 字面意思是进入北京时长 整数类型 目前APP上最大选择七天 是否可以一个月待验证
         - inbjduration: 7
+        # 进入北京的时间 照着这个格式填写就成了
         - inbjtime: 2019-8-6
+        # 抓包发现值为空 带上参数名即可
         - appkey: ""
+        # 设备id 从Charles复制过来即可 这里我就不上传自己的设备id了
         - deviceid:
+        # 抓包发现值为空 带上参数名即可
         - token: ""
+        # 时间戳 还不知道这种加密格式是啥 一般只要把前半截改到当天就可
         - timestamp: 2019-08-05+12%3A41%3A24
+        # 用户ID 从Charles复制过来就行
         - userid:
-        - licenseno: "%E5%B7%9DZRB842"
+        # 驾照信息 我的是以百分号开头的字符串 一定要用引号包起来 要不然py会报错
+        - licenseno: ""
+        # 发动机号码 从Charles复制过来即可
         - engineno:
+        # 应该是汽车类型 从Charles复制过来即可
         - cartypecode:
+        # 从Charles复制过来即可
         - vehicletype:
+        # 驾照图片？复制过来是空 那为啥要上传？！ fuck！
         - drivingphoto: ""
+        # 车辆图片？ 同上 fuck！
         - carphoto: ""
-        - drivername:
+        # 驾驶人名字 从Charles复制过来即可 同理注意若是%开头需要用引号括起来
+        - drivername: ""
+        # 驾照信息 就是你的驾照号码 我的是身份证号码 从Charles复制过来即可
         - driverlicenseno:
+        # 驾驶人照片？ 复制过来是空 那为啥要上传？！ fuck！
         - driverphoto: ""
+        # 人员照片 我的是空
         - personphoto: ""
+        # 应该是经纬度之类的吧 可见其收集信息多么的多！ 从Charles复制过来即可
         - gpslon:
+        # 同上 从Charles复制过来即可
         - gpslat:
+        # 电话号码 我复制过来是空
         - phoneno: ""
+        # 同上复制过来是空
         - imei: ""
+        # 同上复制过来是空
         - imsi: ""
+        # 汽车id 从Charles复制过来即可
         - carid:
+        # 品牌型号 从Charles复制过来即可
         - carmodel:
+        # 汽车注册时间 从Charles复制过来即可
         - carregtime:
+        # 排放标准 从Charles复制过来即可
         - envGrade:
+        # 图片id 从Charles复制过来即可
         - imageId:
+        # 复制过来是空
         - code: ""
+        # 请求签名 实测未加验证！ 从Charles复制过来即可
         - sign:
+        # api来源的平台 从Charles复制过来即可
         - platform:
+# 获取进京证有效期接口
 GetBeijingEntryList:
     url: https://enterbj.zhongchebaolian.com/enterbj/platform/enterbj/entercarlist
     headers:
@@ -60,15 +99,24 @@ GetBeijingEntryList:
         User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
         Referer: https://enterbj.zhongchebaolian.com/enterbj/jsp/enterbj/index.html
     cookie:
+
         CNZZDATA1260761932:
         UM_distinctid:
     data:
+        # 用户id 从Charles复制过来即可
         - userid:
+        # 从Charles复制过来即可
         - appkey: kkk
+        # 从Charles复制过来即可
         - deviceid: ddd
+        # 从Charles复制过来即可
         - timestamp:
+        # 从Charles复制过来即可 未加验证
         - token:
+        # 同上
         - sign:
+        # 从Charles复制过来即可
         - platform:
+        # 复制过来发现值是零
         - appsource: ""
 

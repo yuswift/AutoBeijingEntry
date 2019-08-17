@@ -41,6 +41,13 @@ class AutoBeijingEntry(object):
 
         return requests.post(url=url, headers=headers, cookies=cookies, data=data)
 
+
 if __name__ == "__main__":
-    print(AutoBeijingEntry().get_beijing_entry_list())
+    entry = AutoBeijingEntry()
+    print("Before...")
+    print(entry.get_beijing_entry_list())
+    print(entry.post_beijing_entry())
+    print("After...")
+    print(entry.get_beijing_entry_list())
+
 
