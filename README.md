@@ -30,7 +30,7 @@ A mobilephone
 
 装好以后 打开APP 在Charles上清掉所有的请求 手动办理一次进京证 最终复制一下两个url的curl请求 分别是
 
-https://enterbj.zhongchebaolian.com/enterbj/platform/enterbj/entercarlist 过去进京证有效期接口
+https://enterbj.zhongchebaolian.com/enterbj/platform/enterbj/entercarlist 获取进京证有效期接口
 
 https://enterbj.zhongchebaolian.com/enterbj-img/platform/enterbj/submitpaper_03 上传进京证接口
 
