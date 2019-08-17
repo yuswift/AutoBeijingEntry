@@ -1,0 +1,74 @@
+PostBeijingEntry:
+    url: https://enterbj.zhongchebaolian.com/enterbj-img/platform/enterbj/submitpaper_03
+    headers:
+        Host: enterbj.zhongchebaolian.com
+        Accept: application/json, text/javascript, */*; q=0.01
+        X-Requested-With: XMLHttpRequest
+        Accept-Language: zh-cn
+        Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+        Origin: https://enterbj.zhongchebaolian.com
+        User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+        Referer: https://enterbj.zhongchebaolian.com/enterbj-img/platform/enterbj/loadotherdrivers
+    cookie:
+        JSESSIONID:
+        CNZZDATA1260761932 :
+        UM_distinctid:
+    data:
+        - appsource: bjjj
+        - hiddentime: 2019-08-05+12%3A40%3A21
+        - inbjentrancecode1: 16
+        - inbjentrancecode: 13
+        - inbjduration: 7
+        - inbjtime: 2019-8-6
+        - appkey: ""
+        - deviceid:
+        - token: ""
+        - timestamp: 2019-08-05+12%3A41%3A24
+        - userid:
+        - licenseno: "%E5%B7%9DZRB842"
+        - engineno:
+        - cartypecode:
+        - vehicletype:
+        - drivingphoto: ""
+        - carphoto: ""
+        - drivername:
+        - driverlicenseno:
+        - driverphoto: ""
+        - personphoto: ""
+        - gpslon:
+        - gpslat:
+        - phoneno: ""
+        - imei: ""
+        - imsi: ""
+        - carid:
+        - carmodel:
+        - carregtime:
+        - envGrade:
+        - imageId:
+        - code: ""
+        - sign:
+        - platform:
+GetBeijingEntryList:
+    url: https://enterbj.zhongchebaolian.com/enterbj/platform/enterbj/entercarlist
+    headers:
+        Host: enterbj.zhongchebaolian.com
+        Accept: "*/*"
+        X-Requested-With: XMLHttpRequest
+        Accept-Language: zh-cn
+        Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+        Origin: https://enterbj.zhongchebaolian.com
+        User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+        Referer: https://enterbj.zhongchebaolian.com/enterbj/jsp/enterbj/index.html
+    cookie:
+        CNZZDATA1260761932:
+        UM_distinctid:
+    data:
+        - userid:
+        - appkey: kkk
+        - deviceid: ddd
+        - timestamp:
+        - token:
+        - sign:
+        - platform: 
+        - appsource: ""
+
