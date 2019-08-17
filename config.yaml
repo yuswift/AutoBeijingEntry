@@ -69,6 +69,6 @@ GetBeijingEntryList:
         - timestamp:
         - token:
         - sign:
-        - platform: 
+        - platform:
         - appsource: ""
 
