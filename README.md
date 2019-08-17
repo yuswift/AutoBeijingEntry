@@ -56,9 +56,7 @@ python main.py
 
 目前这版未对签名进行破解(实测这款zf app在服务端未对签名进行校验 因此可以签名可以固定) 后期可能需要App 逆向破解
 
-定时任务可以考虑加上 目前的计划是py+crontab 或者第二版用golang+@rfyiamcool的
-
-[Cronlib]: https://github.com/rfyiamcool/cronlib
+定时任务可以考虑加上 目前的计划是py+crontab 或者第二版用golang+https://github.com/rfyiamcool/cronlib
 
 
 
