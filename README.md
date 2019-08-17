@@ -70,5 +70,5 @@ python main.py
 
 ### Config
 
-
+参见config.yaml
 
