@@ -39,7 +39,7 @@ class AutoBeijingEntry(object):
                 param = str(k) + "=" + str(v) + "&"
                 data += param
 
-        return requests.post(url=url, headers=headers, cookies=cookies, data=data)
+        return requests.post(url=url, headers=headers, cookies=cookies, data=data).json()
 
 
 if __name__ == "__main__":

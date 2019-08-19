@@ -52,6 +52,10 @@ pip install -r requirements.txt
 
 python main.py
 
+#### Docker
+
+Docker run -v $yourpath/config.yaml:/app/AutoBeijingEntry/config.yaml  yuswift/autobeijingentry:v2.4.5
+
 ### Todo
 
 目前这版未对签名进行破解(实测这款zf app在服务端未对签名进行校验 因此可以签名可以固定) 后期可能需要App 逆向破解
