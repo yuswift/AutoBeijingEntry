@@ -82,8 +82,8 @@ PostBeijingEntry:
         - imageId:
         # 复制过来是空
         - code: ""
-        # 请求签名 实测未加验证！ 从Charles复制过来即可
-        - sign:
+        # v2.4.7以后值是空 good news!
+        - sign: ""
         # api来源的平台 从Charles复制过来即可
         - platform:
 # 获取进京证有效期接口
@@ -113,8 +113,8 @@ GetBeijingEntryList:
         - timestamp:
         # 从Charles复制过来即可 未加验证
         - token:
-        # 同上
-        - sign:
+        # v2.4.7以后值是空 good news!
+        - sign: ""
         # 从Charles复制过来即可
         - platform:
         # 复制过来发现值是零
